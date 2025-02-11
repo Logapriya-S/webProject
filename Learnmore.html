@@ -1,0 +1,310 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmpowerCareer</title>
+    <link rel="icon" href="https://www.creativefabrica.com/wp-content/uploads/2019/03/Career-coaching-logo-design-template-vector-image-by-Mansel-Brist-6.jpg">
+    <style>
+        /* General styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #70236A;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        /* Home Page styles */
+        #homePage {
+            background-image: url('https://img.freepik.com/premium-photo/organized-workspace-with-resume-stationery-clean-minimalist-desk_1147221-4888.jpg'); /* Replace with your actual image URL */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            padding-top: 2rem;
+        }
+
+        .overlay {
+            background-color: rgba(177, 132, 173, 0.8);
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+            max-width: 600px;
+            color: white;
+        }
+
+        .overlay h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .overlay p {
+            font-size: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .overlay a {
+            text-decoration: none;
+            background-color: #70236A;
+            color: white;
+            border: none;
+            padding: 0.8rem 1.2rem;
+            margin: 0 0.5rem;
+            font-size: 1rem;
+            border-radius: 4px;
+            display: inline-block;
+        }
+
+        .overlay a:hover {
+            background-color: #582257;
+        }
+
+        /* Learn More Section */
+        #learnMorePage {
+            background: url('https://img.freepik.com/premium-photo/design-engaging-letterhead-template-with-vibrant-colors-graphics-that-appeal-new-students_1270269-1508.jpg') no-repeat center center fixed;
+            background-size: cover;
+            padding: 2rem;
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: 2rem auto;
+            background: rgba(240, 226, 239, 0.9);
+            padding: 2rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .section {
+            margin-bottom: 2rem;
+        }
+
+        .section h2 {
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+
+        .features-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .features-list li {
+            background: rgba(202, 192, 200, 0.911);
+            margin-bottom: 0.5rem;
+            padding: 0.5rem;
+            border-left: 4px solid rgba(141, 66, 148, 0.911);
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+            color: white;
+            margin-top: 2rem;
+        }
+
+        /* Form Page styles (Sign-Up and Login) */
+        .form-page {
+            width: 100%;
+            max-width: 400px;
+            margin: 2rem auto;
+            background: #fff5ff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 2rem;
+        }
+
+        .form-page h2 {
+            text-align: center;
+            color: #70236A;
+        }
+
+        label {
+            display: block;
+            margin-top: 1rem;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input {
+            width: calc(100% - 1rem);
+            padding: 0.8rem;
+            margin-top: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+            box-sizing: border-box;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 0.8rem;
+            background-color: #70236A;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            margin-top: 1.5rem;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #582257;
+        }
+
+        .back-btn {
+            margin-top: 1rem;
+            text-align: center;
+        }
+
+        .back-btn a {
+            color: #70236A;
+            text-decoration: underline;
+        }
+    </style>
+    <style>
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            /* Adjustments for tablets */
+            .overlay {
+                padding: 1.5rem;
+                max-width: 80%;
+            }
+    
+            .overlay h2 {
+                font-size: 1.8rem;
+            }
+    
+            .overlay p {
+                font-size: 0.9rem;
+            }
+    
+            #homePage {
+                height: auto;
+                padding-top: 1rem;
+            }
+    
+            .container {
+                width: 90%;
+                padding: 1.5rem;
+            }
+    
+            .form-page {
+                width: 90%;
+                padding: 1.5rem;
+            }
+        }
+    
+        @media (max-width: 768px) {
+            /* Adjustments for small tablets and large phones */
+            .overlay h2 {
+                font-size: 1.5rem;
+            }
+    
+            .overlay p {
+                font-size: 0.85rem;
+            }
+    
+            .overlay a {
+                padding: 0.6rem 1rem;
+                font-size: 0.9rem;
+            }
+    
+            .container {
+                padding: 1rem;
+            }
+    
+            .form-page {
+                width: 95%;
+            }
+        }
+    
+        @media (max-width: 480px) {
+            /* Adjustments for mobile devices */
+            .overlay h2 {
+                font-size: 1.2rem;
+            }
+    
+            .overlay p {
+                font-size: 0.8rem;
+            }
+    
+            .overlay a {
+                padding: 0.5rem 0.8rem;
+                font-size: 0.8rem;
+            }
+    
+            .container {
+                padding: 0.8rem;
+            }
+    
+            .form-page {
+                padding: 1rem;
+            }
+    
+            input {
+                font-size: 0.9rem;
+                padding: 0.6rem;
+            }
+    
+            .btn {
+                font-size: 0.9rem;
+                padding: 0.6rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<!-- Learn More Section -->
+<div id="learnMorePage">
+    <div class="container">
+        <div class="section">
+            <p>Addressing the lack of personalized job matching, adaptive skill development, and alignment between job market demands and candidate skills.</p>
+        </div>
+        <div class="section">
+            <h2>Features designed to help you win your dream job</h2>
+            <ul class="features-list">
+                <li>Adaptive Learning Pathways</li>
+                <li>Skill Verification & Certifications</li>
+                <li>Career Progress Tracker</li>
+                <li>Real-Time Job Market Insights</li>
+            </ul>
+        </div>
+        <h2>What We Offer</h2>
+        <p>At EmpowerCareer, we believe that every individual deserves a tailored experience to achieve their career goals. Here's how we make it happen:</p>
+        <ul>
+            <li><strong>Personalized Job Recommendations</strong><br>Say goodbye to mismatched job suggestions. Our AI analyzes your skills, experience, and preferences to match you with the opportunities that suit you best.</li>
+            <li><strong>Dynamic Learning Paths</strong><br>Upskill effectively with adaptive learning plans that grow with you. From courses and webinars to hands-on projects, we provide everything you need to bridge skill gaps.</li>
+            <li><strong>Real-Time Market Insights</strong><br>Stay ahead of the curve with insights into emerging skills, industry trends, and salary benchmarks.</li>
+            <li><strong>Skill Verification and Certifications</strong><br>Showcase your expertise with verified certifications and badges. Share them on platforms like LinkedIn to boost your professional visibility.</li>
+        </ul>
+
+        <h2>Why EmpowerCareer?</h2>
+        <p>Our platform is more than just a career tool—it's your personal guide to success. Whether you're a job seeker, a professional looking to upskill, or someone exploring new opportunities, EmpowerCareer is designed with you in mind.</p>
+        <ul>
+            <li><strong>Track Your Progress</strong><br>Monitor your skill development, certifications, and job applications with our intuitive dashboard.</li>
+            <li><strong>Stay Secure</strong><br>We prioritize your privacy and ensure compliance with data protection regulations like GDPR.</li>
+            <li><strong>Break Barriers</strong><br>Our AI is built to be unbiased and fair, ensuring equal opportunities for everyone.</li>
+        </ul>
+
+        <h2>Join the EmpowerCareer Revolution</h2>
+        <p>Empower your career with the tools and insights you need to succeed. Together, let’s bridge the gap between your aspirations and the opportunities that await you.</p>
+        <div class="cta">
+            <a href="homepage.html">Start Your Journey Today</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,287 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmpowerCareer</title>
+    <link rel="icon" href="https://www.creativefabrica.com/wp-content/uploads/2019/03/Career-coaching-logo-design-template-vector-image-by-Mansel-Brist-6.jpg">
+    <style>
+        /* General styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #70236A;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        .back{
+          height:100%;
+        }
+
+        /* Home Page styles */
+        #homePage {
+            background-image: url('https://img.freepik.com/premium-photo/organized-workspace-with-resume-stationery-clean-minimalist-desk_1147221-4888.jpg'); /* Replace with your actual image URL */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            padding-top: 2rem;
+        }
+
+        .overlay {
+            background-color: rgba(177, 132, 173, 0.8);
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+            max-width: 600px;
+            color: white;
+        }
+
+        .overlay h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .overlay p {
+            font-size: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .overlay a {
+            text-decoration: none;
+            background-color: #70236A;
+            color: white;
+            border: none;
+            padding: 0.8rem 1.2rem;
+            margin: 0 0.5rem;
+            font-size: 1rem;
+            border-radius: 4px;
+            display: inline-block;
+        }
+
+        .overlay a:hover {
+            background-color: #582257;
+        }
+
+        /* Learn More Section */
+        #learnMorePage {
+            background: url('https://img.freepik.com/premium-photo/design-engaging-letterhead-template-with-vibrant-colors-graphics-that-appeal-new-students_1270269-1508.jpg') no-repeat center center fixed;
+            background-size: cover;
+            padding: 2rem;
+            color: #333;
+        }
+
+        .container {
+            width: 90px;
+            margin: 2rem auto;
+            background: rgba(240, 226, 239, 0.9);
+            padding: 2rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .section {
+            margin-bottom: 2rem;
+        }
+
+        .section h2 {
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+
+        .features-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .features-list li {
+            background: rgba(202, 192, 200, 0.911);
+            margin-bottom: 0.5rem;
+            padding: 0.5rem;
+            border-left: 4px solid rgba(141, 66, 148, 0.911);
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+            color: white;
+            margin-top: 2rem;
+        }
+
+        /* Form Page styles (Sign-Up and Login) */
+        .form-page {
+            width: 100%;
+            max-width: 400px;
+            margin: 2rem auto;
+            background: #fff5ff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 2rem;
+        }
+
+        .form-page h2 {
+            text-align: center;
+            color: #70236A;
+        }
+
+        label {
+            display: block;
+            margin-top: 1rem;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input {
+            width: calc(100% - 1rem);
+            padding: 0.8rem;
+            margin-top: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+            box-sizing: border-box;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 0.8rem;
+            background-color: #70236A;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            margin-top: 1.5rem;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #582257;
+        }
+
+        .back-btn {
+            margin-top: 1rem;
+            text-align: center;
+        }
+
+        .back-btn a {
+            color: #70236A;
+            text-decoration: underline;
+        }
+    </style>
+    <style>
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            /* Adjustments for tablets */
+            .overlay {
+                padding: 1.5rem;
+                max-width: 80%;
+            }
+    
+            .overlay h2 {
+                font-size: 1.8rem;
+            }
+    
+            .overlay p {
+                font-size: 0.9rem;
+            }
+    
+            #homePage {
+                height: auto;
+                padding-top: 1rem;
+            }
+    
+            .container {
+                width: 90%;
+                padding: 1.5rem;
+            }
+    
+            .form-page {
+                width: 90%;
+                padding: 1.5rem;
+            }
+        }
+    
+        @media (max-width: 768px) {
+            /* Adjustments for small tablets and large phones */
+            .overlay h2 {
+                font-size: 1.5rem;
+            }
+    
+            .overlay p {
+                font-size: 0.85rem;
+            }
+    
+            .overlay a {
+                padding: 0.6rem 1rem;
+                font-size: 0.9rem;
+            }
+    
+            .container {
+                padding: 1rem;
+            }
+    
+            .form-page {
+                width: 95%;
+            }
+        }
+    
+        @media (max-width: 480px) {
+            /* Adjustments for mobile devices */
+            .overlay h2 {
+                font-size: 1.2rem;
+            }
+    
+            .overlay p {
+                font-size: 0.8rem;
+            }
+    
+            .overlay a {
+                padding: 0.5rem 0.8rem;
+                font-size: 0.8rem;
+            }
+    
+            .container {
+                padding: 0.8rem;
+            }
+    
+            .form-page {
+                padding: 1rem;
+            }
+    
+            input {
+                font-size: 0.9rem;
+                padding: 0.6rem;
+            }
+    
+            .btn {
+                font-size: 0.9rem;
+                padding: 0.6rem;
+            }
+        }
+    </style>
+    
+</head>
+<body>
+    
+
+    <!-- Home Page -->
+    <div id="homePage" class='back'>
+        <div class="overlay">
+            <h2>Welcome to EmpowerCareer</h2>
+            <p>Your personalized career development journey starts here. Navigate through adaptive learning pathways, skill certifications, and real-time job insights.</p>
+            <a href="signup.html">Sign Up</a>
+            <a href="login.html">Login</a>
+            <a href="Learnmore.html">Learn More</a>
+        </div>
+    </div>
+</body>
+</html>

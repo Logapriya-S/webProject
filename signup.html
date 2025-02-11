@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmpowerCareer</title>
+    <link rel="icon" href="https://www.creativefabrica.com/wp-content/uploads/2019/03/Career-coaching-logo-design-template-vector-image-by-Mansel-Brist-6.jpg">
+    <style>
+        /* General styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #e8daef;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #70236A;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        /* Form Page styles (Sign-Up and Login) */
+        .form-page {
+            width: 100%;
+            max-width: 400px;
+            margin: 2rem auto;
+            background: #fff5ff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 2rem;
+        }
+
+        .form-page h2 {
+            text-align: center;
+            color: #70236A;
+        }
+
+        label {
+            display: block;
+            margin-top: 1rem;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input {
+            width: calc(100% - 1rem);
+            padding: 0.8rem;
+            margin-top: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+            box-sizing: border-box;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 0.8rem;
+            background-color: #70236A;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            margin-top: 1.5rem;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #582257;
+        }
+
+        .back-btn {
+            margin-top: 1rem;
+            text-align: center;
+        }
+
+        .back-btn a {
+            color: #70236A;
+            text-decoration: underline;
+        }
+    </style>
+    <style>
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            /* Adjustments for tablets */
+            .overlay {
+                padding: 1.5rem;
+                max-width: 80%;
+            }
+    
+            .overlay h2 {
+                font-size: 1.8rem;
+            }
+    
+            .overlay p {
+                font-size: 0.9rem;
+            }
+    
+            #homePage {
+                height: auto;
+                padding-top: 1rem;
+            }
+    
+            .container {
+                width: 90%;
+                padding: 1.5rem;
+            }
+    
+            .form-page {
+                width: 90%;
+                padding: 1.5rem;
+            }
+        }
+    
+        @media (max-width: 768px) {
+            /* Adjustments for small tablets and large phones */
+            .overlay h2 {
+                font-size: 1.5rem;
+            }
+    
+            .overlay p {
+                font-size: 0.85rem;
+            }
+    
+            .overlay a {
+                padding: 0.6rem 1rem;
+                font-size: 0.9rem;
+            }
+    
+            .container {
+                padding: 1rem;
+            }
+    
+            .form-page {
+                width: 95%;
+            }
+        }
+    
+        @media (max-width: 480px) {
+            /* Adjustments for mobile devices */
+            .overlay h2 {
+                font-size: 1.2rem;
+            }
+    
+            .overlay p {
+                font-size: 0.8rem;
+            }
+    
+            .overlay a {
+                padding: 0.5rem 0.8rem;
+                font-size: 0.8rem;
+            }
+    
+            .container {
+                padding: 0.8rem;
+            }
+    
+            .form-page {
+                padding: 1rem;
+            }
+    
+            input {
+                font-size: 0.9rem;
+                padding: 0.6rem;
+            }
+    
+            .btn {
+                font-size: 0.9rem;
+                padding: 0.6rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Sign-Up Page -->
+    <div id="signUpPage" class="form-page">
+        <h2>Create Your Account</h2>
+        <form action="#" method="POST" autocomplete="off">
+            <label for="name">UserName</label>
+            <input type="text" id="name" name="name" placeholder="Enter your username" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Create a password" required>
+
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+
+            <button type="submit" class="btn">Sign Up</button>
+             
+        </form>
+        <div class="back-btn">
+            <a href="homepage.html">Back to Home</a>
+        </div>
+    </div>
+</body>
+</html>
